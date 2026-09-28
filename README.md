@@ -47,9 +47,27 @@ Thời gian thực thi trung bình (đơn vị: ms) trên cấu hình **CPU Inte
 ### Yêu cầu
 - Trình biên dịch C++ hỗ trợ **C++11** trở lên (GCC / MinGW, MSVC, Clang).
 
-### Hướng dẫn Biên dịch & Chạy chương trình
+# 🚀 Hướng Dẫn Chạy Chương Trình
 
-1. **Clone repository:**
+### Cách 1: Chạy bằng Dev-C++ / Code::Blocks (Đơn giản nhất cho máy Windows)
+1. Tải file mã nguồn `main.cpp` về máy.
+2. Mở phần mềm **Dev-C++** (hoặc Code::Blocks).
+3. Vào **File** -> **Open** -> Chọn file `main.cpp`.
+4. Nhấn phím **F11** (hoặc nút **Compile & Run**) để biên dịch và chạy chương trình.
+
+---
+
+### Cách 2: Chạy bằng Visual Studio Code (VS Code)
+1. Mở VS Code, cài đặt Extension **C/C++** (Của Microsoft) và **Code Runner**.
+2. Mở file `main.cpp`.
+3. Nhấn tổ hợp phím `Ctrl + Alt + N` hoặc bấm nút **Play ▶️** ở góc trên bên phải để chạy.
+
+---
+
+### Cách 3: Chạy bằng Dòng lệnh (Terminal / Command Prompt)
+Nếu máy bạn đã cài đặt trình biên dịch GCC / g++:
+
+1. Mở Terminal / Command Prompt tại thư mục chứa file code.
+2. Biên dịch code bằng lệnh:
    ```bash
-   git clone [https://github.com/username/ten-repo-cua-ban.git](https://github.com/username/ten-repo-cua-ban.git)
-   cd ten-repo-cua-ban
+   g++ -O2 -std=c++11 main.cpp -o sorting_app
